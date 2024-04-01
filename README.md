@@ -8,7 +8,6 @@ You will need to clone the repo:
 
 ```zsh 
 git clone https://github.com/asdf-vm/asdf.git ${HOME}/.asdf
-
 ```
 
 
@@ -21,9 +20,7 @@ export PATH=$PATH:${HOME}/.asdf
 Now you need to update the plugin list:
 
 ```zsh
-
 asdf plugin list all
-
  ```
 
 ![alt text](image-2.png)
@@ -38,4 +35,28 @@ asdf list all kubectl
 
 Mmm... lot of them, so lets install 1.27.9 version and 1.29.3:
 
+```zsh 
+asdf install kubectl 1.27.9
+```
+Check established packages:
 
+```zsh 
+asdf list
+```
+![alt text](image-4.png)
+
+Select a package version:
+
+```zsh 
+asdf shell kubectl 1.27.9
+```
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+unistall:
+
+```zsh
+ asdf uninstall kubectl 1.27.9 
+ ```
