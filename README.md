@@ -60,3 +60,16 @@ unistall:
 ```zsh
  asdf uninstall kubectl 1.27.9 
  ```
+
+ if you need to use for example kubectl 1.27.9, in the folder of iterest you can run:
+
+
+ ```zsh 
+ asdf local kubectl 1.21.9 
+```
+
+You can also create a `.tool-versions` file in the root directory of the project and specify in it the versions of the packages you need for your project, then execute the `asdf install` command in the root directory of your project.
+![alt text](image-7.png)
+
+
+![alt text](image-8.png)
